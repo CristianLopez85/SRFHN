@@ -11,7 +11,7 @@ x = xo + noise; So = x(1:N);
 
 %-------------  Plot Simulated Outer Race fault signal   ------------------
 figure;
-set(gcf,'position',[300 100 900 550]);set(gcf,'color','white');
+set(gcf,'position',[300 100 900 550]);
 subplot(321);plot(t,xo,'b');ylim([1.2*min(xo) 1.2*max(xo)]);
 subplot(322);plot_fft(abs(hilbert(xo)),fs,2,0,499);
 subplot(323);plot(t,So,'b');ylim([1.2*min(So) 1.2*max(So)]);

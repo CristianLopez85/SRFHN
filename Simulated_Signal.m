@@ -42,8 +42,8 @@ for h = 0.002:0.002:0.1
 end
 
 %------------------  Obtain the output signal   ---------------------------
-S4o=twosrFHN(1,1,opth,optg,S2);
-S4o=S4o-mean(S4o);
+S4o = twosrFHN(1,1,opth,optg,S2);
+S4o = S4o-mean(S4o);
 subplot(325);plot(t,S4o,'b');
 xlabel('Time (s)');
 subplot(326);plot_fft(S4o,fs,2,0,499);
